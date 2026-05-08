@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        
+        <!-- Temperature Converter -->
+        <div class="converter-card">
+            <h2>Temperature</h2>
+            <div class="converter-inputs">
+                <div class="input-group">
+                    <label for="celsius">°C</label>
+                    <input 
+                        type="number" 
+                        class="converter-input"
+                        placeholder="0"
+                        step="0.01"
+                    >
+                </div>
+                
+                <div class="separator">↔</div>
+                
+                <div class="input-group">
+                    <label for="fahrenheit">°F</label>
+                    <input 
+                        type="number" 
+                        class="converter-input"
+                        placeholder="32"
+                        step="0.01"
+                    >
+                </div>
+            </div>
+        </div>
+
+        <!-- Distance Converter -->
+        <div class="converter-card">
+            <h2>Distance</h2>
+            <div class="converter-inputs">
+                <div class="input-group">
+                    <label for="kilometers">km</label>
+                    <input 
+                        type="number" 
+                        class="converter-input"
+                        placeholder="0"
+                        step="0.01"
+                    >
+                </div>
+                
+                <div class="separator">↔</div>
+                
+                <div class="input-group">
+                    <label for="miles">mi</label>
+                    <input 
+                        type="number" 
+                        class="converter-input"
+                        placeholder="0"
+                        step="0.01"
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

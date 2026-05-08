@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.converter-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.converter-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+}
+
+.converter-card h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.converter-inputs {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+
+.input-group {
+    flex: 1;
+    min-width: 120px;
+}
+
+.input-group label {
+    display: block;
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.converter-input {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 1.1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 500;
+    color: #333;
+}
+
+.converter-input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.converter-input::placeholder {
+    color: #bbb;
+}
+
+.separator {
+    color: #667eea;
+    font-size: 1.5rem;
+    font-weight: 300;
+    flex-shrink: 0;
+    text-align: center;
+    min-width: 40px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .converter-card {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .converter-card h2 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+
+    .converter-inputs {
+        gap: 10px;
+    }
+
+    .input-group {
+        min-width: 100px;
+    }
+
+    .converter-input {
+        padding: 12px 14px;
+        font-size: 1rem;
+    }
+
+    .separator {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+
+    .converter-card {
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    .converter-card h2 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    .converter-inputs {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .input-group {
+        flex: 0 1 calc(50% - 15px);
+    }
+
+    .separator {
+        width: 100%;
+        margin: 8px 0;
+        font-size: 1.2rem;
+    }
+
+    .converter-input {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+    }
+
+    .input-group label {
+        font-size: 0.8rem;
+        margin-bottom: 6px;
+    }
+}
