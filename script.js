@@ -24,3 +24,10 @@ const convertKilometers = () => {
     document.getElementById("enterMiles").value = miles;
     console.log(miles);
 }
+
+const convertMiles = () => {
+    miles = parseFloat(document.getElementById("enterMiles").value);
+    kilometers = miles / 0.621371;
+    document.getElementById("enterKilometers").value = kilometers;
+    console.log(kilometers);
+}
