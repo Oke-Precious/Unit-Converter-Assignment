@@ -17,3 +17,10 @@ const convertFahrenheit = () => {
     document.getElementById("enterCelsius").value = celsius;
     console.log(celsius);
 }
+
+const convertKilometers = () => {
+    kilometers = parseFloat(document.getElementById("enterKilometers").value);
+    miles = kilometers * 0.621371;
+    document.getElementById("enterMiles").value = miles;
+    console.log(miles);
+}
